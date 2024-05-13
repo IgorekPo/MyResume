@@ -732,7 +732,7 @@ li{
     width: 180px;
     height: 180px;
     border-radius: 100%;
-    background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+    background: linear-gradient(180deg, rgb(40, 13, 107) 0%, rgb(87, 47, 125) 100%);
     margin-bottom: 98px;
 
 }

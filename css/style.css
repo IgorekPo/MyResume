@@ -23,6 +23,9 @@ body::-webkit-scrollbar{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+body.lock{
+    overflow: hidden;
+}
 input {
     outline:none;
 }
@@ -110,9 +113,10 @@ li{
     height: 2px;
     position: absolute;
     background: #FFF;
-    top: 14px;
+    top: 50%;
     right: 0;
     transition: all 0.5s ease;
+    transform: translate(0, -50%);
 }
 
 .burger-menu::before,
@@ -149,6 +153,7 @@ li{
         animation: headerBodyMove 0.5s ease;
         left: 0;
         top: 0;
+        overflow: auto;
     }
     .header__body.active .header__logo{
         padding-left: 10px;
@@ -239,10 +244,6 @@ li{
 .gradient-first{
     top: -80px;
     left: -108px;
-}
-.gradient-first.active{
-    top: 0;
-    left: 0;
 }
 .gradient-second{
     left: -48px;

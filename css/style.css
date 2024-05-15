@@ -511,12 +511,12 @@ li{
 .popup__content {
     background-color: #fff;
     color: #000;
-    max-width: 375px;
+    max-width: 675px;
     position: relative;
     padding: 20px;
     transition: all 0.8s ease 0s;
     opacity: 0;
-    transform: perspective(800px) translate(0px, -100%) rotateX(45deg);
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 .popup__close {
     color: #000;
@@ -526,13 +526,16 @@ li{
 }
 .popup__img img{
     max-width: 100%;
+    margin-bottom: 6px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
 }
 .popup__text {
     font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 131%;
 }
-.popup-link1{
 
-}
 /* ========== */
 @keyframes ellipsMove1 {
     0%{
@@ -620,16 +623,18 @@ li{
     border-radius: 10px;
     padding: 10px 20px;
     background-color: #2C1250;
+    color: #fff;
     border: 2px solid #693B93;
-    transition: all .8s ease;
+    transition: all 1.2s ease;
 }
+
 .experience__block-title span{
     color: rgb(113, 39, 186);
 }
 .experience__block-link:hover {
     background-color: #fff;
     color: #2C1250;
-    transition: all .8s ease;
+    transition: all 1.2s ease;
 }
 
 
@@ -663,13 +668,8 @@ li{
     .experience__block{
         padding: 5px;
     }
-}
-
-@media (max-width: 248px){
-    .experience__image-title{
-        width: 119px;
-        left: -83px;
-        top: -21px;
+    .popup__content {
+        max-width: 525px;
     }
 }
 
@@ -1257,7 +1257,6 @@ margin: 35px 0;
     width: 60%;
     justify-content: center;
     align-self: flex-start;
-
 }
 .footer-img{
     position: relative;

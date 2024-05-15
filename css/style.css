@@ -146,7 +146,7 @@ li{
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color: #130428;
+        background-color: #000000ed;
         display: flex;
         align-items: flex-start;
         z-index: 50;

@@ -510,7 +510,11 @@ li{
     padding: 30px 10px;
 }
 .popup__content {
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(130deg, #130428 7.29%, #251043 34.38%, #38126d 56.77%, #261045 84.9%, #190634 100%);
     color: #000;
     max-width: 675px;
     position: relative;
@@ -520,7 +524,7 @@ li{
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 .popup__close {
-    color: #000;
+    color: #fff;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -535,8 +539,31 @@ li{
     font-size: 12px;
     letter-spacing: 0.02em;
     line-height: 131%;
+    flex: 1 1 auto;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
 }
-
+.experience__pop-link{
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 150%;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 500;
+    background-color: #2C1250;
+    color: #fff;
+    border: 2px solid #693B93;
+    transition: all 1.2s ease;
+}
+.experience__pop-link:hover{
+    background-color: #fff;
+    color: #2C1250;
+    transition: all 1.2s ease;
+}
 /* ========== */
 @keyframes ellipsMove1 {
     0%{
